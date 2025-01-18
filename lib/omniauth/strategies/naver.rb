@@ -1,100 +1,54 @@
-# frozen_string_literal: true
-
-require "omniauth-oauth2"
+require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
     class Naver < OmniAuth::Strategies::OAuth2
-      DEFAULT_SCOPE = "account_email,profile".freeze
+      option :name, 'naver'
 
-      BASE_URL = "https://kauth.naver.com".freeze
-      AUTHORIZE_URL = "/oauth/authorize".freeze
-      AUTHORIZE_TOKEN_URL = "/oauth/token".freeze
+      option :client_options, {
+        site: 'https://nid.naver.com',
+        authorize_url: 'https://nid.naver.com/oauth2.0/authorize',
+        token_url: 'https://nid.naver.com/oauth2.0/token',
+      }
 
-      TOKEN_INFO_URL = "/oauth/tokeninfo".freeze
-
-      OPENID_CONFIG_URL = "https://kauth.naver.com/.well-known/openid-configuration".freeze
-
-      # USER_INFO_URL = 'v1/oidc/userinfo'
-      USER_INFO_URL = "https://kapi.naver.com/v2/user/me".freeze
-
-      option :client_options,
-             site: BASE_URL,
-             authorize_url: AUTHORIZE_URL,
-             token_url: AUTHORIZE_TOKEN_URL
-
-      uid { raw_info["id"].to_s }
+      uid { raw_properties['id'].to_s }
 
       info do
-        hash = {
-          name: raw_info["properties"]["nickname"],
-          username: raw_info["naver_account"]["email"],
-          image: raw_info["properties"]["thumbnail_image"]
+        {
+          'name' => raw_properties['name'],
+          'email' => raw_properties['email'],
+          'gender' => gender,
+          'image' => image,
+          'nickname' => raw_properties['nickname']
         }
-        if raw_info["naver_account"]["has_email"] && raw_info["naver_account"]["is_email_verified"] && raw_info["naver_account"]["is_email_valid"]
-          hash[:email] = raw_info["naver_account"]["email"]
-        end
-        raw_info
       end
 
       extra do
-        { raw_info: raw_info }
-      end
-
-      def callback_url
-        options.redirect_url || (full_host + callback_path)
-      end
-
-      # def authorize_params
-      #   options.authorize_params[:state] = SecureRandom.hex(24)
-      #
-      #   if OmniAuth.config.test_mode
-      #     @env ||= {}
-      #     @env["rack.session"] ||= {}
-      #   end
-      #
-      #   params = options.authorize_params
-      #                   .merge(options_for("authorize"))
-      #                   .merge(pkce_authorize_params)
-      #
-      #   params[:client_id] = options.client_id  # client_id 추가
-      #
-      #   session["omniauth.pkce.verifier"] = options.pkce_verifier if options.pkce
-      #   session["omniauth.state"] = params[:state]
-      #
-      #   params
-      # end
-
-      def auth_token_params
-        verifier = session.delete("omniauth.pkce.verifier")
-        params = {
-          code: request.params["code"],
-          client_id: options.client_id,
-          client_secret: options.client_secret,
-          redirect_uri: callback_url,
-          grant_type: "authorization_code"
-        }
-        params[:code_verifier] = verifier if verifier
-        params
-      end
-
-      def build_access_token
-        verifier = request.params["code"]
-        token = client.auth_code.get_token(verifier, {
-          redirect_uri: callback_url,
-          client_id: options.client_id,
-          # client_secret: options.client_secret
-        }.merge(token_params.to_hash(symbolize_keys: true)), deep_symbolize(options.auth_token_params))
-        token
+        {raw_info: raw_info}
       end
 
       private
 
+      def gender
+        return if raw_properties['gender'].nil?
+        return 'male' if raw_properties['gender'].include? 'M'
+        'female' if raw_properties['gender'].include? 'F'
+      end
+
+      def image
+        return if raw_properties['profile_image'].nil?
+        raw_properties['profile_image'].sub('?type=s80', '') unless raw_properties['profile_image'].include? 'nodata_33x33.gif'
+      end
+
       def raw_info
-        @raw_info ||= access_token.get(USER_INFO_URL).parsed
+        @raw_info ||= access_token.get('https://openapi.naver.com/v1/nid/me').parsed
+      end
+
+      def raw_properties
+        @raw_properties ||= raw_info['response']
       end
     end
   end
 end
 
-OmniAuth.config.add_camelization "naver", "Naver"
+OmniAuth.config.add_camelization 'naver', 'Naver'
