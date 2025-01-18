@@ -1,0 +1,7 @@
+en:
+  js:
+    login:
+      kakao:
+        name: "Kakao"
+        title: "Login with Kakao"
+        message: "Authenticating with Login with Kakao (make sure pop up blockers are not enabled)"

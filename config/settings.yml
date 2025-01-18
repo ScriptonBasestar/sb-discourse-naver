@@ -1,0 +1,17 @@
+plugins:
+  enable_login_with_kakao:
+    default: false
+    validator: "EnableLoginWithKakaoValidator"
+  login_with_kakao_client_id:
+    default: ""
+    secret: true
+  login_with_kakao_client_secret:
+    default: ""
+    secret: true
+  login_with_kakao_scope:
+    default: "profile,account_email"
+  login_with_kakao_overrides_email:
+    default: false
+  login_with_kakao_email_verified:
+    hidden: true
+    default: true

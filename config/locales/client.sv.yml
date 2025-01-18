@@ -1,0 +1,13 @@
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
+#
+# To work with us on translations, join this project:
+# https://translate.discourse.org/
+
+sv:
+  js:
+    login:
+      kakao:
+        name: "Kakao"
+        title: "Logga in med Kakao"
+        message: "Autentisering av inloggning genom Kakao (se till att popup -blockerare inte är aktiverade)"

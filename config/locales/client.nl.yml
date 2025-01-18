@@ -1,0 +1,13 @@
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
+#
+# To work with us on translations, join this project:
+# https://translate.discourse.org/
+
+nl:
+  js:
+    login:
+      kakao:
+        name: "Kakao"
+        title: "Aanmelden met Kakao"
+        message: "Verificatie met Aanmelden met Kakao (zorg dat pop-upblokkeringen niet zijn ingeschakeld)"
