@@ -7,7 +7,7 @@
 ja:
   js:
     login:
-      kakao:
+      naver:
         name: "Kakao"
         title: "Kakao でログイン"
         message: "Kakao でログインを認証しています（ポップアップブロッカーが有効になっていないことを確認してください）"

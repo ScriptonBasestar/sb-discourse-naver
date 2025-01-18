@@ -7,7 +7,7 @@
 es:
   js:
     login:
-      kakao:
+      naver:
         name: "Kakao"
         title: "Iniciar sesión con Kakao"
         message: "Autenticando con inicio de sesión con Kakao (asegúrate de que no haya bloqueadores de ventanas emergentes activados)"

@@ -7,7 +7,7 @@
 pt_BR:
   js:
     login:
-      kakao:
+      naver:
         name: "Kakao"
         title: "Entrar com a Kakao"
         message: "Autenticaçao com login da Kakao (verifique se bloqueadores de pop-up não estão ativos)"

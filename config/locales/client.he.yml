@@ -7,7 +7,7 @@
 he:
   js:
     login:
-      kakao:
+      naver:
         name: "Kakao"
         title: "כניסה עם אמזון"
         message: "אימות באמצעות כניסה עם Kakao (נא לוודא שחוסמי חלונות קופצים אינם מופעלים)"

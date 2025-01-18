@@ -7,7 +7,7 @@
 sv:
   js:
     login:
-      kakao:
+      naver:
         name: "Kakao"
         title: "Logga in med Kakao"
         message: "Autentisering av inloggning genom Kakao (se till att popup -blockerare inte är aktiverade)"

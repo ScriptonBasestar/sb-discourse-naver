@@ -6,11 +6,11 @@
 
 tr_TR:
   site_settings:
-    enable_login_with_kakao: "Kakao kimlik doğrulaması ile Giriş'i etkinleştirin, \"login with kakao client id\" ve \"login with kakao client secret\" gerektirir."
-    login_with_kakao_client_id: "Kakao istemci kimliği ile giriş yapın"
-    login_with_kakao_client_secret: "Kakao istemci sırrı ile giriş yapın"
-    login_with_kakao_scope: "Kakao OAuth2 kapsamları ile giriş yapın (boşlukla ayırarak)"
-    login_with_kakao_overrides_email: "Discourse kullanıcı hesabındaki e-posta adresini geçersiz kılar."
+    enable_login_with_naver: "Kakao kimlik doğrulaması ile Giriş'i etkinleştirin, \"login with naver client id\" ve \"login with naver client secret\" gerektirir."
+    login_with_naver_client_id: "Kakao istemci kimliği ile giriş yapın"
+    login_with_naver_client_secret: "Kakao istemci sırrı ile giriş yapın"
+    login_with_naver_scope: "Kakao OAuth2 kapsamları ile giriş yapın (boşlukla ayırarak)"
+    login_with_naver_overrides_email: "Discourse kullanıcı hesabındaki e-posta adresini geçersiz kılar."
     errors:
-      login_with_kakao_client_id_is_blank: "Bu ayarı etkinleştirmeden önce \"login with kakao client id\" ayarını yapmanız gerekir."
-      login_with_kakao_client_secret_is_blank: "Bu ayarı etkinleştirmeden önce \"login with kakao client secret\" ayarını yapmanız gerekir."
+      login_with_naver_client_id_is_blank: "Bu ayarı etkinleştirmeden önce \"login with naver client id\" ayarını yapmanız gerekir."
+      login_with_naver_client_secret_is_blank: "Bu ayarı etkinleştirmeden önce \"login with naver client secret\" ayarını yapmanız gerekir."

@@ -6,11 +6,11 @@
 
 nl:
   site_settings:
-    enable_login_with_kakao: "Schakel verificatie via Aanmelden met Kakao in, vereist 'login with kakao client id' en 'login with kakao client secret'."
-    login_with_kakao_client_id: "Client-ID voor Aanmelden met Kakao"
-    login_with_kakao_client_secret: "Clientgeheim voor Aanmelden met Kakao"
-    login_with_kakao_scope: "OAuth2-bereiken voor Aanmelden met Kakao (gescheiden door spaties)"
-    login_with_kakao_overrides_email: "Overschrijft het e-mailadres van het Discourse-gebruikersaccount."
+    enable_login_with_naver: "Schakel verificatie via Aanmelden met Kakao in, vereist 'login with naver client id' en 'login with naver client secret'."
+    login_with_naver_client_id: "Client-ID voor Aanmelden met Kakao"
+    login_with_naver_client_secret: "Clientgeheim voor Aanmelden met Kakao"
+    login_with_naver_scope: "OAuth2-bereiken voor Aanmelden met Kakao (gescheiden door spaties)"
+    login_with_naver_overrides_email: "Overschrijft het e-mailadres van het Discourse-gebruikersaccount."
     errors:
-      login_with_kakao_client_id_is_blank: "Je moet 'login with kakao client id' instellen voordat je deze instelling inschakelt."
-      login_with_kakao_client_secret_is_blank: "Je moet 'login with kakao client secret' instellen voordat je deze instelling inschakelt."
+      login_with_naver_client_id_is_blank: "Je moet 'login with naver client id' instellen voordat je deze instelling inschakelt."
+      login_with_naver_client_secret_is_blank: "Je moet 'login with naver client secret' instellen voordat je deze instelling inschakelt."

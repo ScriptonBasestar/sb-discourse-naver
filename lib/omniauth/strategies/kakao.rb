@@ -7,16 +7,16 @@ module OmniAuth
     class Kakao < OmniAuth::Strategies::OAuth2
       DEFAULT_SCOPE = "account_email,profile".freeze
 
-      BASE_URL = "https://kauth.kakao.com".freeze
+      BASE_URL = "https://kauth.naver.com".freeze
       AUTHORIZE_URL = "/oauth/authorize".freeze
       AUTHORIZE_TOKEN_URL = "/oauth/token".freeze
 
       TOKEN_INFO_URL = "/oauth/tokeninfo".freeze
 
-      OPENID_CONFIG_URL = "https://kauth.kakao.com/.well-known/openid-configuration".freeze
+      OPENID_CONFIG_URL = "https://kauth.naver.com/.well-known/openid-configuration".freeze
 
       # USER_INFO_URL = 'v1/oidc/userinfo'
-      USER_INFO_URL = "https://kapi.kakao.com/v2/user/me".freeze
+      USER_INFO_URL = "https://kapi.naver.com/v2/user/me".freeze
 
       option :client_options,
              site: BASE_URL,
@@ -28,11 +28,11 @@ module OmniAuth
       info do
         hash = {
           name: raw_info["properties"]["nickname"],
-          username: raw_info["kakao_account"]["email"],
+          username: raw_info["naver_account"]["email"],
           image: raw_info["properties"]["thumbnail_image"]
         }
-        if raw_info["kakao_account"]["has_email"] && raw_info["kakao_account"]["is_email_verified"] && raw_info["kakao_account"]["is_email_valid"]
-          hash[:email] = raw_info["kakao_account"]["email"]
+        if raw_info["naver_account"]["has_email"] && raw_info["naver_account"]["is_email_verified"] && raw_info["naver_account"]["is_email_valid"]
+          hash[:email] = raw_info["naver_account"]["email"]
         end
         raw_info
       end
@@ -97,4 +97,4 @@ module OmniAuth
   end
 end
 
-OmniAuth.config.add_camelization "kakao", "Kakao"
+OmniAuth.config.add_camelization "naver", "Kakao"

@@ -7,7 +7,7 @@
 fi:
   js:
     login:
-      kakao:
+      naver:
         name: "Kakao"
         title: "Kirjaudu sisään Kakao-tilillä"
         message: "Todennus Login with Kakaoilla (varmista, että ponnahdusikkunoiden esto ei ole käytössä)"

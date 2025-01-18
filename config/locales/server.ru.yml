@@ -6,11 +6,11 @@
 
 ru:
   site_settings:
-    enable_login_with_kakao: "Включите аутентификацию входа через Kakao, требуется «Вход с ID клиента Kakao» и «Вход с ключом клиента Kakao»."
-    login_with_kakao_client_id: "Вход с ID клиента Kakao"
-    login_with_kakao_client_secret: "Вход с ключом клиента Kakao"
-    login_with_kakao_scope: "Вход с помощью Kakao OAuth2 (через пробел)"
-    login_with_kakao_overrides_email: "Переопределяет адрес электронной почты в аккаунте пользователя Discourse."
+    enable_login_with_naver: "Включите аутентификацию входа через Kakao, требуется «Вход с ID клиента Kakao» и «Вход с ключом клиента Kakao»."
+    login_with_naver_client_id: "Вход с ID клиента Kakao"
+    login_with_naver_client_secret: "Вход с ключом клиента Kakao"
+    login_with_naver_scope: "Вход с помощью Kakao OAuth2 (через пробел)"
+    login_with_naver_overrides_email: "Переопределяет адрес электронной почты в аккаунте пользователя Discourse."
     errors:
-      login_with_kakao_client_id_is_blank: "Вы должны установить «Вход с ID клиента kakao» перед включением этой настройки."
-      login_with_kakao_client_secret_is_blank: "Вы должны установить «Вход с ключом клиента kakao» перед включением этой настройки."
+      login_with_naver_client_id_is_blank: "Вы должны установить «Вход с ID клиента naver» перед включением этой настройки."
+      login_with_naver_client_secret_is_blank: "Вы должны установить «Вход с ключом клиента naver» перед включением этой настройки."

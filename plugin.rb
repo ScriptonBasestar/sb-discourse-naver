@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-# name: sb-discourse-kakao
+# name: sb-discourse-naver
 # about: discourse plugin for Kakao login and other features
 # meta_topic_id:
 # version: 0.0.1
 # authors: archmagece
-# url: https://github.com/scriptonbasestar/sb-discourse-kakao
+# url: https://github.com/scriptonbasestar/sb-discourse-naver
 
-enabled_site_setting :enable_login_with_kakao
+enabled_site_setting :enable_login_with_naver
 
-# gem "sb-omniauth-kakao"
+# gem "sb-omniauth-naver"
 
-register_svg_icon "fab-kakao"
+register_svg_icon "fab-naver"
 
-require_relative "lib/omniauth/strategies/kakao"
+require_relative "lib/omniauth/strategies/naver"
 
-require_relative "lib/auth/login_with_kakao_authenticator"
-require_relative "lib/validators/enable_login_with_kakao_validator"
+require_relative "lib/auth/login_with_naver_authenticator"
+require_relative "lib/validators/enable_login_with_naver_validator"
 
-auth_provider authenticator: Auth::LoginWithKakaoAuthenticator.new, icon: "fab-kakao"
+auth_provider authenticator: Auth::LoginWithKakaoAuthenticator.new, icon: "fab-naver"
