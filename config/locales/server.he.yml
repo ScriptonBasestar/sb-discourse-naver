@@ -6,10 +6,10 @@
 
 he:
   site_settings:
-    enable_login_with_naver: "הפעלת כניסה עם אימות מול Kakao, דורש את `login with naver client id` ואת `login with naver client secret`."
-    login_with_naver_client_id: "כניסה עם מזהה לקוח של Kakao"
-    login_with_naver_client_secret: "כניסה עם סוד לקוח של Kakao"
-    login_with_naver_scope: "כניסה עם scopes של OAuth2 של Kakao (מופרדים ברווחים)"
+    enable_login_with_naver: "הפעלת כניסה עם אימות מול Naver, דורש את `login with naver client id` ואת `login with naver client secret`."
+    login_with_naver_client_id: "כניסה עם מזהה לקוח של Naver"
+    login_with_naver_client_secret: "כניסה עם סוד לקוח של Naver"
+    login_with_naver_scope: "כניסה עם scopes של OAuth2 של Naver (מופרדים ברווחים)"
     login_with_naver_overrides_email: "דורס את כתובת הדוא״ל בחשבון המשתמש ב־Discourse."
     errors:
       login_with_naver_client_id_is_blank: "עליך להגדיר את ‚login with naver client id’ בטרם הפעלת ההגדרה הזאת."

@@ -1,9 +1,9 @@
 en:
   site_settings:
-    enable_login_with_naver: "Enable Login with Kakao authentication, requires `login with naver client id` and `login with naver client secret`."
-    login_with_naver_client_id: "Login with Kakao client ID"
-    login_with_naver_client_secret: "Login with Kakao client secret"
-    login_with_naver_scope: "Login with Kakao OAuth2 scopes (space separated)"
+    enable_login_with_naver: "Enable Login with Naver authentication, requires `login with naver client id` and `login with naver client secret`."
+    login_with_naver_client_id: "Login with Naver client ID"
+    login_with_naver_client_secret: "Login with Naver client secret"
+    login_with_naver_scope: "Login with Naver OAuth2 scopes (space separated)"
     login_with_naver_overrides_email: "Overrides the email address on the Discourse user account."
 
     errors:

@@ -8,6 +8,6 @@ pt_BR:
   js:
     login:
       naver:
-        name: "Kakao"
-        title: "Entrar com a Kakao"
-        message: "Autenticaçao com login da Kakao (verifique se bloqueadores de pop-up não estão ativos)"
+        name: "Naver"
+        title: "Entrar com a Naver"
+        message: "Autenticaçao com login da Naver (verifique se bloqueadores de pop-up não estão ativos)"

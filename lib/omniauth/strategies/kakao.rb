@@ -4,7 +4,7 @@ require "omniauth-oauth2"
 
 module OmniAuth
   module Strategies
-    class Kakao < OmniAuth::Strategies::OAuth2
+    class Naver < OmniAuth::Strategies::OAuth2
       DEFAULT_SCOPE = "account_email,profile".freeze
 
       BASE_URL = "https://kauth.naver.com".freeze
@@ -97,4 +97,4 @@ module OmniAuth
   end
 end
 
-OmniAuth.config.add_camelization "naver", "Kakao"
+OmniAuth.config.add_camelization "naver", "Naver"

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # name: sb-discourse-naver
-# about: discourse plugin for Kakao login and other features
+# about: discourse plugin for Naver login and other features
 # meta_topic_id:
 # version: 0.0.1
 # authors: archmagece
@@ -18,4 +18,4 @@ require_relative "lib/omniauth/strategies/naver"
 require_relative "lib/auth/login_with_naver_authenticator"
 require_relative "lib/validators/enable_login_with_naver_validator"
 
-auth_provider authenticator: Auth::LoginWithKakaoAuthenticator.new, icon: "fab-naver"
+auth_provider authenticator: Auth::LoginWithNaverAuthenticator.new, icon: "fab-naver"

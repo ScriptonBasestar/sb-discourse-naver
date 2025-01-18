@@ -6,10 +6,10 @@
 
 fi:
   site_settings:
-    enable_login_with_naver: "Ota käyttöön Login with Kakao -todennus, \"login with naver client id\" ja \"login with naver client secret\" vaaditaan."
-    login_with_naver_client_id: "Login with Kakao -asiakastunnus"
-    login_with_naver_client_secret: "Login with Kakaoin asiakkaan salatunnus"
-    login_with_naver_scope: "Login with Kakaoin OAuth2-alueet (välilyönnillä erotettuna)"
+    enable_login_with_naver: "Ota käyttöön Login with Naver -todennus, \"login with naver client id\" ja \"login with naver client secret\" vaaditaan."
+    login_with_naver_client_id: "Login with Naver -asiakastunnus"
+    login_with_naver_client_secret: "Login with Naverin asiakkaan salatunnus"
+    login_with_naver_scope: "Login with Naverin OAuth2-alueet (välilyönnillä erotettuna)"
     login_with_naver_overrides_email: "Ohittaa Discourse-käyttäjätilin sähköpostiosoitteen."
     errors:
       login_with_naver_client_id_is_blank: "Sinun täytyy asettaa \"login with naver client id\" ennen kuin otat tämän asetuksen käyttöön."

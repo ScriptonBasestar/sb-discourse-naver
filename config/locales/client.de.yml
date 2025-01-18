@@ -8,6 +8,6 @@ de:
   js:
     login:
       naver:
-        name: "Kakao"
-        title: "Mit Kakao anmelden"
-        message: "Authentifizierung über „Anmelden mit Kakao“ (stelle sicher, dass Pop-up-Blocker nicht aktiviert sind)"
+        name: "Naver"
+        title: "Mit Naver anmelden"
+        message: "Authentifizierung über „Anmelden mit Naver“ (stelle sicher, dass Pop-up-Blocker nicht aktiviert sind)"

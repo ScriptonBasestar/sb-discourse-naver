@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class EnableLoginWithKakaoValidator
+class EnableLoginWithNaverValidator
   def initialize(opts = {})
     @opts = opts
   end

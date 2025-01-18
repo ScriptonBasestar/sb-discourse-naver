@@ -8,6 +8,6 @@ tr_TR:
   js:
     login:
       naver:
-        name: "Kakao"
-        title: "Kakao ile Giriş Yapın"
-        message: "Kakao ile Giriş Yapın ile kimlik doğrulanıyor (açılır pencere engelleyicilerinin etkin olmadığından emin olun)"
+        name: "Naver"
+        title: "Naver ile Giriş Yapın"
+        message: "Naver ile Giriş Yapın ile kimlik doğrulanıyor (açılır pencere engelleyicilerinin etkin olmadığından emin olun)"

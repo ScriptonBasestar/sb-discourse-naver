@@ -8,6 +8,6 @@ fr:
   js:
     login:
       naver:
-        name: "Kakao"
-        title: "Se connecter avec Kakao"
-        message: "Authentification avec la connexion à Kakao (assurez-vous qu'aucun bloqueur de fenêtres contextuelles n'est activé)"
+        name: "Naver"
+        title: "Se connecter avec Naver"
+        message: "Authentification avec la connexion à Naver (assurez-vous qu'aucun bloqueur de fenêtres contextuelles n'est activé)"

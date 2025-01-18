@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe EnableLoginWithKakaoValidator do
+RSpec.describe EnableLoginWithNaverValidator do
   subject(:validator) { described_class.new }
 
   describe "#valid_value?" do

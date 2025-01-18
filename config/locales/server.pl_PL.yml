@@ -6,10 +6,10 @@
 
 pl_PL:
   site_settings:
-    enable_login_with_naver: "Włącz logowanie za pomocą uwierzytelniania Kakao, wymaga `login with naver client id` i `login with naver client secret`."
-    login_with_naver_client_id: "Zaloguj się przy użyciu ID klienta Kakao"
-    login_with_naver_client_secret: "Zaloguj się za pomocą sekretu klienta Kakao"
-    login_with_naver_scope: "Zaloguj się za pomocą zakresów Kakao OAuth2 (oddzielone spacją)"
+    enable_login_with_naver: "Włącz logowanie za pomocą uwierzytelniania Naver, wymaga `login with naver client id` i `login with naver client secret`."
+    login_with_naver_client_id: "Zaloguj się przy użyciu ID klienta Naver"
+    login_with_naver_client_secret: "Zaloguj się za pomocą sekretu klienta Naver"
+    login_with_naver_scope: "Zaloguj się za pomocą zakresów Naver OAuth2 (oddzielone spacją)"
     login_with_naver_overrides_email: "Zastępuje adres e-mail na koncie użytkownika Discourse."
     errors:
       login_with_naver_client_id_is_blank: "Musisz ustawić 'login with naver client id' przed włączeniem tego ustawienia."

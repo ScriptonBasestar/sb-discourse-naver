@@ -8,6 +8,6 @@ pl_PL:
   js:
     login:
       naver:
-        name: "Kakao"
-        title: "Zaloguj się przez Kakao"
-        message: "Uwierzytelnianie za pomocą Zaloguj się przez Kakao (upewnij się, że blokowanie wyskakujących okienek nie jest włączone)"
+        name: "Naver"
+        title: "Zaloguj się przez Naver"
+        message: "Uwierzytelnianie za pomocą Zaloguj się przez Naver (upewnij się, że blokowanie wyskakujących okienek nie jest włączone)"

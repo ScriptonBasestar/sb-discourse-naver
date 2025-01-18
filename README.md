@@ -1,10 +1,10 @@
-# Login with Kakao Plugin
+# Login with Naver Plugin
 
-A plugin that enables authentication via Login with Kakao.
+A plugin that enables authentication via Login with Naver.
 
 For more information, please see: https://meta.discourse.org/t/login-with-naver-plugin/117564
 
-#### Setting up Login With Kakao to auth using localhost for development
+#### Setting up Login With Naver to auth using localhost for development
 1. create an account at developer.naver.com
 2. use the Client Id and Client Secret provided on developer.naver.com to update your `SiteSettings.login_with_naver_client_id` and `SiteSettings.login_with_naver_client_secret` on your local discourse instance
 3. on developer.naver.com, Under "Web Settings", set the following settings:
@@ -16,7 +16,7 @@ For more information, please see: https://meta.discourse.org/t/login-with-naver-
    - `login_required: false`
 6. start your local rails server as following:
    - ```% REDIRECT_URL_ORIGIN=http://localhost:4200 rails s```
-7. at this point, when you go to localhost:4200, you should be redirected to /login and be presented with a "Login With Kakao" button. Clicking on it should 
+7. at this point, when you go to localhost:4200, you should be redirected to /login and be presented with a "Login With Naver" button. Clicking on it should 
 take you to an authentication flow on naver.com and redirect you in the end, to a logged in session at localhost: 4200.
 
 

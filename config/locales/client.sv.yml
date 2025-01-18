@@ -8,6 +8,6 @@ sv:
   js:
     login:
       naver:
-        name: "Kakao"
-        title: "Logga in med Kakao"
-        message: "Autentisering av inloggning genom Kakao (se till att popup -blockerare inte är aktiverade)"
+        name: "Naver"
+        title: "Logga in med Naver"
+        message: "Autentisering av inloggning genom Naver (se till att popup -blockerare inte är aktiverade)"

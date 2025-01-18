@@ -6,11 +6,11 @@
 
 es:
   site_settings:
-    enable_login_with_naver: "Habilitar el inicio de sesión con la autenticación de Kakao, requiere «iniciar sesión con el id de cliente de naver» e «iniciar sesión con el secreto de cliente de naver»."
-    login_with_naver_client_id: "Iniciar sesión con el ID de cliente de Kakao"
-    login_with_naver_client_secret: "Iniciar sesión con el secreto de cliente de Kakao"
-    login_with_naver_scope: "Iniciar sesión con los ámbitos de Kakao OAuth2 (separados por espacio)"
+    enable_login_with_naver: "Habilitar el inicio de sesión con la autenticación de Naver, requiere «iniciar sesión con el id de cliente de naver» e «iniciar sesión con el secreto de cliente de naver»."
+    login_with_naver_client_id: "Iniciar sesión con el ID de cliente de Naver"
+    login_with_naver_client_secret: "Iniciar sesión con el secreto de cliente de Naver"
+    login_with_naver_scope: "Iniciar sesión con los ámbitos de Naver OAuth2 (separados por espacio)"
     login_with_naver_overrides_email: "Reemplaza la dirección de correo electrónico en la cuenta de usuario de Discourse."
     errors:
-      login_with_naver_client_id_is_blank: "Debes configurar «iniciar sesión con el ID de cliente de Kakao» antes de habilitar esta configuración."
-      login_with_naver_client_secret_is_blank: "Debes configurar «iniciar sesión con el secreto de cliente de Kakao» antes de habilitar esta configuración."
+      login_with_naver_client_id_is_blank: "Debes configurar «iniciar sesión con el ID de cliente de Naver» antes de habilitar esta configuración."
+      login_with_naver_client_secret_is_blank: "Debes configurar «iniciar sesión con el secreto de cliente de Naver» antes de habilitar esta configuración."
