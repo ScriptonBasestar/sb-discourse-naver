@@ -9,7 +9,7 @@ ru:
     enable_login_with_naver: "Включите аутентификацию входа через Naver, требуется «Вход с ID клиента Naver» и «Вход с ключом клиента Naver»."
     login_with_naver_client_id: "Вход с ID клиента Naver"
     login_with_naver_client_secret: "Вход с ключом клиента Naver"
-    login_with_naver_scope: "Вход с помощью Naver OAuth2 (через пробел)"
+    # login_with_naver_scope: "Вход с помощью Naver OAuth2 (через пробел)"
     login_with_naver_overrides_email: "Переопределяет адрес электронной почты в аккаунте пользователя Discourse."
     errors:
       login_with_naver_client_id_is_blank: "Вы должны установить «Вход с ID клиента naver» перед включением этой настройки."

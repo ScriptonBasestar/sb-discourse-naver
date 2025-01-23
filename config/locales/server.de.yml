@@ -9,7 +9,7 @@ de:
     enable_login_with_naver: "Authentifizierung über „Anmelden mit Naver“ aktivieren, erfordert `login with naver client id` und `login with naver client secret`."
     login_with_naver_client_id: "Client-ID für „Anmelden mit Naver“"
     login_with_naver_client_secret: "Client-Geheimnis für „Anmelden mit Naver“"
-    login_with_naver_scope: "OAuth2-Bereiche für „Anmelden mit Naver“ (durch Leerzeichen getrennt)"
+    # login_with_naver_scope: "OAuth2-Bereiche für „Anmelden mit Naver“ (durch Leerzeichen getrennt)"
     login_with_naver_overrides_email: "Überschreibt die E-Mail-Adresse im Discourse-Benutzerkonto."
     errors:
       login_with_naver_client_id_is_blank: "Bevor du diese Einstellung aktivierst, musst du „login with naver client id“ festlegen."

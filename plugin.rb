@@ -9,6 +9,7 @@
 
 enabled_site_setting :enable_login_with_naver
 
+# gem "omniauth-naver"
 # gem "sb-omniauth-naver"
 
 register_svg_icon "fab-naver"

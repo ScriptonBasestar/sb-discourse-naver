@@ -9,7 +9,7 @@ sv:
     enable_login_with_naver: "Aktivera inloggning genom Naver-autentisering, kräver `login with naver client id` och `login with naver client secret`."
     login_with_naver_client_id: "Logga in med Navers klient-ID"
     login_with_naver_client_secret: "Logga in med Navers klienthemlighet"
-    login_with_naver_scope: "Logga in med Naver OAuth2 scopes (mellanslag separerat)"
+    # login_with_naver_scope: "Logga in med Naver OAuth2 scopes (mellanslag separerat)"
     login_with_naver_overrides_email: "Åsidosätter e-postadressen för användarkontot i Discourse."
     errors:
       login_with_naver_client_id_is_blank: "Du måste ställa in 'login with naver client id' innan du aktiverar den här inställningen."

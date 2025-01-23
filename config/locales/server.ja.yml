@@ -9,7 +9,7 @@ ja:
     enable_login_with_naver: "「Naver でログイン」認証を有効にします。 `login with naver client id` と `login with naver client secret` が必要です。"
     login_with_naver_client_id: "「Naver でログイン」クライアント ID"
     login_with_naver_client_secret: "「Naver でログイン」クライアントシークレット"
-    login_with_naver_scope: "「Naver でログイン」OAuth2 スコープ（スペース区切り）"
+    # login_with_naver_scope: "「Naver でログイン」OAuth2 スコープ（スペース区切り）"
     login_with_naver_overrides_email: "Discourse ユーザーアカウントのメールアドレスを上書きします。"
     errors:
       login_with_naver_client_id_is_blank: "この設定を有効にする前に、'login with naver client id' を設定する必要があります。"

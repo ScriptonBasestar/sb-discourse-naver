@@ -9,7 +9,7 @@ fr:
     enable_login_with_naver: "Activez la connexion avec l'authentification Naver, nécessite « connexion avec l'identifiant client naver » et « connexion avec le secret client naver »."
     login_with_naver_client_id: "Connexion avec l'identifiant client Naver"
     login_with_naver_client_secret: "Connexion avec le secret client Naver"
-    login_with_naver_scope: "Connexion avec les autorisations OAuth2 d'Naver (séparées par des espaces)"
+    # login_with_naver_scope: "Connexion avec les autorisations OAuth2 d'Naver (séparées par des espaces)"
     login_with_naver_overrides_email: "Remplace l'adresse e-mail du compte utilisateur Discourse."
     errors:
       login_with_naver_client_id_is_blank: "Vous devez définir « Connexion avec l'identifiant client Naver » avant d'activer ce paramètre."

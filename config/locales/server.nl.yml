@@ -9,7 +9,7 @@ nl:
     enable_login_with_naver: "Schakel verificatie via Aanmelden met Naver in, vereist 'login with naver client id' en 'login with naver client secret'."
     login_with_naver_client_id: "Client-ID voor Aanmelden met Naver"
     login_with_naver_client_secret: "Clientgeheim voor Aanmelden met Naver"
-    login_with_naver_scope: "OAuth2-bereiken voor Aanmelden met Naver (gescheiden door spaties)"
+    # login_with_naver_scope: "OAuth2-bereiken voor Aanmelden met Naver (gescheiden door spaties)"
     login_with_naver_overrides_email: "Overschrijft het e-mailadres van het Discourse-gebruikersaccount."
     errors:
       login_with_naver_client_id_is_blank: "Je moet 'login with naver client id' instellen voordat je deze instelling inschakelt."

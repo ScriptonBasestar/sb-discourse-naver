@@ -9,7 +9,7 @@ it:
     enable_login_with_naver: "Abilita l'autenticazione con Login with Naver; richiede l'impostazione dei parametri `login with naver client id` e `login with naver client secret`."
     login_with_naver_client_id: "ID del client Login with Naver"
     login_with_naver_client_secret: "Segreto del client Login with Naver"
-    login_with_naver_scope: "Ambiti di Login with Naver OAuth2 (separati da spazi)"
+    # login_with_naver_scope: "Ambiti di Login with Naver OAuth2 (separati da spazi)"
     login_with_naver_overrides_email: "Sostituisce l'indirizzo e-mail nell'account dell'utente Discourse."
     errors:
       login_with_naver_client_id_is_blank: "Prima di abilitare questa impostazione, devi impostare l'opzione 'login with naver client id'."
