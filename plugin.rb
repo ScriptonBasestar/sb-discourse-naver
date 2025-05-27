@@ -9,13 +9,14 @@
 
 enabled_site_setting :enable_login_with_naver
 
-# gem "omniauth-naver"
-# gem "sb-omniauth-naver"
+# gem "sb-omniauth-naver", "0.3.3"
+gem 'sb-omniauth-naver', git: git@github.com:ScriptonBasestar/sb-omniauth-naver.git
 
 # register_asset "stylesheets/discourse-custom-oauth-icons.scss"
 register_svg_icon "naver"
 
-require_relative "lib/omniauth/strategies/naver"
+require "sb-omniauth-naver"
+# require_relative "lib/omniauth/strategies/naver"
 
 require_relative "lib/auth/login_with_naver_authenticator"
 require_relative "lib/validators/enable_login_with_naver_validator"
