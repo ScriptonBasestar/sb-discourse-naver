@@ -8,8 +8,8 @@ plugins:
   login_with_naver_client_secret:
     default: ""
     secret: true
-  # login_with_naver_scope:
-  #   default: ""
+  login_with_naver_scope:
+    default: ""
   login_with_naver_redirect_url:
     default: ""
     description: "If redirect_url is specified, redirect_path_or_url will be ignored."

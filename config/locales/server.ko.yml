@@ -5,3 +5,14 @@
 # https://translate.discourse.org/
 
 ko:
+  site_settings:
+    login_with_naver_client_id: "네이버 개발자센터에서 발급받은 Client ID"
+    login_with_naver_client_secret: "네이버 개발자센터에서 발급받은 Client Secret"
+    login_with_naver_redirect_url: "리다이렉트 URL (설정 시 redirect_path는 무시됩니다)"
+    login_with_naver_redirect_path: "리다이렉트 경로"
+    login_with_naver_overrides_email: "네이버에서 받은 이메일로 사용자 이메일을 덮어쓰기"
+    login_with_naver_email_verified: "네이버에서 받은 이메일을 검증됨으로 처리"
+    enable_login_with_naver: "네이버 로그인 활성화"
+    errors:
+      login_with_naver_client_id_is_blank: "네이버 Client ID가 설정되지 않았습니다."
+      login_with_naver_client_secret_is_blank: "네이버 Client Secret이 설정되지 않았습니다."

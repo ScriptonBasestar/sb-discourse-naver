@@ -19,7 +19,11 @@ class Auth::LoginWithNaverAuthenticator < ::Auth::ManagedAuthenticator
                           strategy.options[
                             :client_secret
                           ] = SiteSetting.login_with_naver_client_secret
-                          # strategy.options[:scope] = SiteSetting.login_with_naver_scope
+                          
+                          if SiteSetting.login_with_naver_scope.present?
+                            strategy.options[:scope] = SiteSetting.login_with_naver_scope
+                          end
+                          
                           if SiteSetting.login_with_naver_redirect_url.present?
                             strategy.options[:redirect_url] = SiteSetting.login_with_naver_redirect_url
                           else
