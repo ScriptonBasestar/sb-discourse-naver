@@ -10,15 +10,19 @@ plugins:
     secret: true
   login_with_naver_scope:
     default: ""
+    description: "네이버 OAuth2 스코프 설정 (선택사항 - 네이버는 프로필/이메일 자동 제공)"
   login_with_naver_redirect_url:
     default: ""
-    description: "If redirect_url is specified, redirect_path_or_url will be ignored."
+    description: "네이버 OAuth 리디렉션 URL (설정 시 redirect_path보다 우선 적용)"
     # client: true
   login_with_naver_redirect_path:
     default: "/auth/naver/callback"
+    description: "네이버 OAuth 콜백 경로"
     # client: true
   login_with_naver_overrides_email:
     default: false
+    description: "네이버에서 받은 이메일로 기존 사용자 이메일 덮어쓰기"
   login_with_naver_email_verified:
     hidden: true
     default: true
+    description: "네이버에서 제공하는 이메일을 검증된 것으로 처리"

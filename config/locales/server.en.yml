@@ -3,8 +3,11 @@ en:
     enable_login_with_naver: "Enable Login with Naver authentication, requires `login with naver client id` and `login with naver client secret`."
     login_with_naver_client_id: "Login with Naver client ID"
     login_with_naver_client_secret: "Login with Naver client secret"
-    # login_with_naver_scope: "Login with Naver OAuth2 scopes (space separated)"
-    login_with_naver_overrides_email: "Overrides the email address on the Discourse user account."
+    login_with_naver_scope: "Login with Naver OAuth2 scopes (optional - profile/email provided by default)"
+    login_with_naver_redirect_url: "Naver OAuth redirect URL (overrides redirect_path if specified)"
+    login_with_naver_redirect_path: "Naver OAuth callback path"
+    login_with_naver_overrides_email: "Overrides the email address on the Discourse user account"
+    login_with_naver_email_verified: "Treat Naver-provided email as verified"
 
     errors:
       login_with_naver_client_id_is_blank: "You must set 'login with naver client id' before enabling this setting."

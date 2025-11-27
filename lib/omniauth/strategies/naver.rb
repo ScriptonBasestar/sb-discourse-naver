@@ -36,13 +36,13 @@ module OmniAuth
         g = raw_properties["gender"]
         return if g.nil?
         return "male" if g.include?("M")
-        return "female" if g.include?("F")
+        "female" if g.include?("F")
       end
 
       def image
         img = raw_properties["profile_image"]
         return if img.nil?
-        return img.sub("?type=s80", "") unless img.include?("nodata_33x33.gif")
+        img.sub("?type=s80", "") if img.exclude?("nodata_33x33.gif")
       end
 
       def raw_info

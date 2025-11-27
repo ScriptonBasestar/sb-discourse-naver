@@ -39,4 +39,24 @@ class Auth::LoginWithNaverAuthenticator < ::Auth::ManagedAuthenticator
   def primary_email_verified?(auth)
     SiteSetting.login_with_naver_email_verified
   end
+
+  # 네이버 사용자 정보를 Discourse 사용자 정보로 매핑
+  def after_authenticate(auth)
+    result = super
+
+    # 네이버에서 제공하는 닉네임을 username으로 사용
+    if auth.info&.nickname.present?
+      result.username = auth.info.nickname
+    end
+
+    # 네이버 프로필 이미지 URL 설정
+    if auth.info&.image.present?
+      result.avatar_url = auth.info.image
+    end
+
+    result
+  rescue => e
+    Rails.logger.error "Naver authentication error: #{e.message}"
+    result
+  end
 end
